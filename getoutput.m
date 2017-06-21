@@ -7,7 +7,7 @@ output_weights = model.out_weights;
 
 inputWithW = [ones(size(input,1),1),input];
 hiddenAct_raw = input * input_weights;
-hiddenAct = 1 ./ (1 + exp(-hiddenAct_raw));
+hiddenAct = sigmoid(hiddenAct_raw);
 outAct_raw = hiddenAct * output_weights;
 outAct = 1 ./ (1 + exp(-outAct_raw));
 
