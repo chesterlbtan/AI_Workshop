@@ -11,6 +11,6 @@ function error = mse(target, actual)
 
 count = length(target);
 raw = (target - actual) .^ 2;
-error = ones([count 1]) * raw;
+error = (raw * ones([count 1])) / count;
 
 end
