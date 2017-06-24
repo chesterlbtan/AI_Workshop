@@ -1,4 +1,4 @@
-function model_out = train_mlp( model, input, target)
+function model_out = train_mlp(model, input, target)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 

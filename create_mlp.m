@@ -1,5 +1,6 @@
 function model = create_mlp(input_count, output_count)
 % CREATE_MLP Create a struct representing an MLP network object.
+% Multi-Layer Perceptron
 %    MODEL = CREATE_MLP(input, output)
 
 
