@@ -4,7 +4,7 @@ function model = create_mlp(input_count, output_count)
 %    MODEL = CREATE_MLP(input, output)
 
 
-neuron_count = input_count + 1;
+neuron_count = floor((input_count + output_count) / 2);
 
 weightcenter = 0;
 weightrange = 1;
